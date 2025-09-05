@@ -1,0 +1,308 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial,sans-serif;
+  background: #1d1d33;
+  color: #ffffff;
+  line-height: 1.0;
+  font-size: 0.95rem;
+}
+/* header */
+header {
+
+  background: linear-gradient(135deg, #282341, #452c6b);  /* transition between two or more colors */
+  padding: 15px 30px;
+  position: sticky; /* When header scroll down, it will stick*/
+  top: 0; /* screen er top theke 0 px gap thakbe */
+  z-index: 100;/* onno section gula er upor e dekhabe (samne asbe) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+  flex-wrap: wrap;
+   background: linear-gradient(45deg, #6a135d, #6b2e54, #673a66, #786275);
+}
+
+header .logo {
+  font-size: 2rem;/* font-size boro korar jonno use hoy1rem = 16px (default)*/
+  font-weight: 700;
+  color: #fffb00;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+/* navbar */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fbf705;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background: #ffd700;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  background: #ffd700;
+  color: #2c2a36;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+.motive {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 25px 25px;
+  background: linear-gradient(135deg,#3f3c76, #252528 );
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+/*left-side*/
+.motive .left {
+  flex: 1.3;
+  font-size: rem;
+  font-style: italic;
+  line-height: 1.0;
+}
+
+.motive .left span {
+  font-size: 0.98rem;
+  font-weight: 300;
+  color: #ffd700;
+}
+
+/* right-side */
+.motive .right img {
+  max-width: 250px;
+  border-radius:5px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+   /*skills*/
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* responsive grid, protita column minimum 250px, available space onujayi auto fit kore */
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* common box for skills */
+.skills-box {
+background: linear-gradient(145deg, #2c2a36, #1d1826); /* 145deg means gradient er direction.
+  border-radius: 25px; */
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.75);
+  transition: transform 0.3s, box-shadow 0.3s;
+   border-radius:10px;
+}
+
+.skills-box:hover {
+  /* Hover korle element slightly uthe jay ar large dekhay,eye-catching animation er jonno. */
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.85);
+}
+
+.skills-box h2 { 
+  color: #ffd700; 
+  margin-bottom: 25px; 
+  font-size: 1.4rem; 
+}
+
+/* skills learned */
+.skills-container-learned {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+
+}
+
+.skills-container-learned div {
+  background: #406a6a;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.skills-container-learned div:hover {
+  background: #00b3b3;
+}
+
+/* skills applied */
+.skills-container-applied {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.skills-container-applied div img {
+  max-width: 172px;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.skills-container-applied div img:hover {
+  transform: scale(1.15) rotate(-3deg);
+}
+
+
+/*profile */
+#profile {
+  background: linear-gradient(135deg, #2c2a36, #3e2663);
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease;
+}
+
+#profile:hover { transform: translateY(-4px); }
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(45deg, #ff8a00, #e52e71, #00c9ff, #92fe9d);
+  background-size: 300% 300%;
+  /* profile picture er gradient ke smoothly glowing or moving effect dey */
+  animation: glowing 3s infinite alternate;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+/*glowing effect create kore */
+@keyframes glowing {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#profile h1 { margin-bottom: 8px; font-size: 1.6rem; color: #ffd700; }
+#profile p { font-size: 0.95rem; color: #ccc; line-height: 1.4; }
+
+/*weekly-task */
+.table-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.table-box {
+  background: linear-gradient(135deg, #35354a, #2e2e4d);
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+  transition: transform 0.3s;
+}
+
+.table-box:hover { transform: translateY(-4px); }
+
+.table-box h3 { color: #ffd700; margin-bottom: 10px; }
+
+.table-box table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.87rem;
+}
+
+.table-box th, .table-box td {
+  border: 1px solid #555;
+  padding: 6px;
+  text-align: center;
+}
+
+.table-box th { background: #222; color: #fff; }
+
+/*contact-form*/
+.contact-form {
+  background: linear-gradient(135deg, #2e2c3a, #3a3350);
+  width: 330px;
+  margin: 40px auto 60px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+  transition: transform 0.3s;
+}
+
+.contact-form:hover { transform: translateY(-3px); }
+
+.contact-form label { display: block; margin-top: 8px; font-weight: 600; }
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.contact-form input[type="submit"] {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, purple, violet);
+  transition: all 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, violet, purple);
+}
+
+/*footer*/
+footer {
+  background: linear-gradient(135deg, #51358e, #9d388b);
+  padding: 22px;
+  text-align: center;
+  color: #fefdfd;
+  font-size: 0.88rem;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  header { flex-direction: column; gap: 12px; }
+  .motive, .skills-section, .table-container { flex-direction: column; align-items: center; }
+  .right img { max-width: 100%; }
+  .skills-box, .table-box, .contact-form { width: 90%; }
+} 

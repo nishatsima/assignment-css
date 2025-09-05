@@ -1,59 +1,36 @@
-# Intern Project
+###Intern Project
 
-This is a sample portfolio-style project created by **Nishat Sima** as part of an internship program. The project demonstrates basic HTML and CSS skills, along with structuring content and creating a simple, responsive webpage.
+
+## Intern Project
+
+This is my sample portfolio project by **Nishat Sima** for my internship. It shows my profile, skills, weekly tasks, and a contact form.
 
 ---
 
 ## Introduction
-This project showcases my learning journey during my internship. It includes a profile section, skills learned and applied, weekly tasks, and a contact form. The website is for educational purposes and practice only.
+This project is part of my internship learning. It has a profile section, skills I learned and used, weekly tasks, and a contact form. It is made for practice and learning purposes only.
 
 ---
-
 ## Purpose
-- To demonstrate practical skills in HTML and CSS.
-- To create a simple, structured, and responsive web page.
-- To document weekly tasks and skills learned during the internship.
+- To show what I learned in HTML and CSS
+- To make a simple and organized web page
+- To keep track of weekly tasks and skills
 
 ---
-
 ## Features
-- Responsive design
-- Profile section with image and bio
-- Skills learned and applied section
+- Works well on different screen sizes (responsive)
+- Profile section with photo and info
+- Skills learned and used
 - Weekly tasks table
 - Contact form
 - Footer with copyright
 
 ---
-
-## Skills Learned
-- HTML
-- CSS
-- JavaScript
-- Node.js
-- Python
-- React
-- PHP
-
----
+## Skills
+Skills I learned and applied during the internship.
 
 ## Weekly Tasks
-
-### Week 1
-| Day | Skill |
-| --- | --- |
-| 1   | HTML |
-| 2   | HTML Semantic |
-| 3   | HTML More Elements |
-| 4   | CSS Basic Revise |
-| 5   | CSS Fundamentals |
-
-### Week 2
-| Day | Skill |
-| --- | --- |
-| 1   | Assignment (CSS) |
-
----
+Summary of tasks done each week.
 
 ## How to Run
 1. Clone the repository:
